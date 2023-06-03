@@ -1,0 +1,92 @@
+body {
+    background-image: url("/assets/images/mainbackground.avif");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 2rem;
+}
+form {
+    justify-self: center;
+    border: 3px solid rgb(95, 95, 207);
+    border-radius: 20px;
+    background-color: rgba(10, 189, 221, 0.5);
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.question-wrapper {
+    margin-left: 10rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.car-model {
+    grid-row: 2/3;
+}
+.fueltype-checkbox {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+} 
+.engine-capacity {
+    grid-row: 4/5;
+}
+.capacity {
+    width: 6rem;
+}
+.vehicle-condition {
+    display: flex;
+    flex-direction: column;
+}
+.paymentmethod-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.issue-year {
+    width: 5rem;
+}
+button {
+width: 14rem;
+height: 3.2rem;
+background-color: rgba(107, 107, 214,0.89);
+border: 3px solid rgba(10, 189, 221, 0.5);
+border-radius: 10px;
+margin-top: 2rem;
+font-family: 'Raleway', sans-serif;
+align-self: center;
+}
+button:hover {
+	background-color:rgba(61, 61, 224, 0.89);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+.result {
+    margin-top: 4rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+@media (max-width: 600px) {
+   
+    .question-wrapper {
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
+    }
+    button {
+        width: 8rem;
+        height: 2.7rem;
+}
+}
